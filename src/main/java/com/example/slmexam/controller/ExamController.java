@@ -24,7 +24,7 @@ public class ExamController {
         return result;
     }
 
-    @RequestMapping("/total")
+    @RequestMapping("factorial/total")
     public long getTotalFactorial() {
         return factorials.stream().mapToInt(Integer::intValue).sum();
     }
