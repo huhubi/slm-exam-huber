@@ -15,7 +15,7 @@ public class ExamController {
 
     @RequestMapping("/factorial")
     public int calculateFactorial(@RequestParam(required = true, name = "number") int n) {
-        int result = 1;
+        int result = 0;
 
         for (int i = 1; i <= n; i++) {
             result = result * i;
